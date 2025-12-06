@@ -30,3 +30,28 @@ body {
     margin: 0 auto;
     padding: 0 15px
 }
+
+.button {
+    cursor: pointer;
+    transition-duration: .5s;
+
+    &:hover {
+        opacity: .5;
+    }
+
+    &--yellow {
+        background-color: #FCD980;
+        border-radius: 40px;
+        color: #1B1C2B;
+        padding: 12px 56px;
+    }
+
+    &--black {
+        background-color: #282938;
+        border-radius: 40px;
+        color: #F4F6FC;
+        padding: 12px 56px;
+    }
+
+    &--arrow {}
+}
