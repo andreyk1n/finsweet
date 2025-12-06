@@ -103,11 +103,8 @@ function Header() {
 
           {isMobile && (
             <div className="header__buttons">
-              <button className="button button__orange">
-                Get consultation
-              </button>
-              <button className="button button__transparent">
-                Log in / Register
+              <button className="button">
+                Contact us
               </button>
             </div>
           )}
@@ -115,10 +112,7 @@ function Header() {
 
         {!isMobile && (
           <div className="header__buttons">
-            <button className="button button__orange">Get consultation</button>
-            <button className="button button__transparent">
-              Log in / Register
-            </button>
+            <button className="button">Contact us</button>
           </div>
         )}
       </div>
