@@ -67,24 +67,38 @@ function Header() {
         >
           <NavLink
             className="header__link"
+            to="/"
+            onClick={handleLinkClick}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            className="header__link"
             to="/about"
             onClick={handleLinkClick}
           >
-            About Us
+            About us
           </NavLink>
           <NavLink
             className="header__link"
-            to="/courses"
+            to="/features"
             onClick={handleLinkClick}
           >
-            Courses
+            Features
           </NavLink>
           <NavLink
             className="header__link"
-            to="/events"
+            to="/pricing"
             onClick={handleLinkClick}
           >
-            Events
+            Pricing
+          </NavLink>
+          <NavLink
+            className="header__link"
+            to="/faq"
+            onClick={handleLinkClick}
+          >
+            Faq
           </NavLink>
           <NavLink
             className="header__link"
@@ -92,13 +106,6 @@ function Header() {
             onClick={handleLinkClick}
           >
             Blog
-          </NavLink>
-          <NavLink
-            className="header__link"
-            to="/contacts"
-            onClick={handleLinkClick}
-          >
-            Contacts
           </NavLink>
 
           {isMobile && (
