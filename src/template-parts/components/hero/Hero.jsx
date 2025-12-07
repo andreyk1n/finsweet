@@ -32,7 +32,7 @@ const Hero = () => {
             </button>
           </div>
         </div>
-        <img src={image} alt="Hero image" draggable="false" />
+        <img className="hero__image" src={image} alt="Hero image" draggable="false" />
       </div>
     </section>
   );
