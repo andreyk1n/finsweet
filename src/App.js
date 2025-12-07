@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./template-parts/partials/header/Header.jsx";
-import Footer from "./template-parts/partials/footer/Footer";
 import Hero from "./template-parts/components/hero/Hero.jsx";
-
+import How from "./template-parts/components/how/How.jsx";
+import Footer from "./template-parts/partials/footer/Footer.jsx";
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <Header />
 
       <Hero />
+
+      <How />
 
       <Footer />
     </Router>
