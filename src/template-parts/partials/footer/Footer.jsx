@@ -15,12 +15,10 @@ const Footer = () => {
             <Link to="/" className="footer__logo">
               <img src={logo} alt="Logo" />
             </Link>
-
-            <p>
+            <p className="mw-400">
               We are always open to discuss your project and improve your online
               presence.
             </p>
-
             <div className="footer__contacts">
               <div>
                 Email me at
@@ -32,14 +30,12 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          <div className="footer__col">
+          <div className="footer__col footer__description">
             <h2>Lets Talk!</h2>
             <p>
               We are always open to discuss your project, improve your online
               presence and help with your UX/UI design challenges.
             </p>
-
             <div className="footer__socials">
               <a href="#">
                 <img src={facebook} alt="Icon" />
@@ -56,8 +52,9 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-        <div className="footer__links">
+      </div>
+      <div className="footer__links">
+        <div className="footer__container">
           <p>Copyright 2022, Finsweet.com</p>
           <nav className="footer__nav">
             <NavLink to="/">Home</NavLink>
