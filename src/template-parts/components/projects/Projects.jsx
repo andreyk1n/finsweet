@@ -28,34 +28,34 @@ const Projects = () => {
           </Link>
         </div>
         <div className="projects__items">
-          <Link to="/project_1" className="project__item">
+          <Link to="/project_1" className="projects__item projects__item-big">
             <img src={img1} alt="Project preview" draggable="false" />
-            <div className="projects__info">
-              <p className="projects__info-title">
+            <div className="projects__item-info">
+              <p className="projects__item-info-title">
                 Workhub office Webflow Webflow Design
               </p>
-              <p className="projects__info-subtitle">
+              <p className="projects__item-info-subtitle">
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam{" "}
               </p>
-              <Link to="/project_1" className="project__item">
+              <Link to="/project_1" className="projects__item">
                 View project <img src={arrow} alt="Arrow" />
               </Link>
             </div>
           </Link>
-          <Link to="/project_2" className="project__item">
+          <Link to="/project_2" className="projects__item">
             <img src={img2} alt="Project preview" draggable="false" />
-            <div className="projects__info">
-              <p className="projects__info-title">Unisaas Website Design</p>
-              <Link to="/project_2" className="project__item">
+            <div className="projects__item-info">
+              <p className="projects__item-info-title">Unisaas Website Design</p>
+              <Link to="/project_2" className="projects__item">
                 View project <img src={arrow} alt="Arrow" />
               </Link>
             </div>
           </Link>
-          <Link to="/project_3" className="project__item">
+          <Link to="/project_3" className="projects__item">
             <img src={img3} alt="Project preview" draggable="false" />
-            <div className="projects__info">
-              <p className="projects__info-title">Project title</p>
+            <div className="projects__item-info">
+              <p className="projects__item-info-title">Project title</p>
               <Link to="/project_3" className="project__item">
                 View project <img src={arrow} alt="Arrow" />
               </Link>
