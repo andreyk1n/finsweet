@@ -38,8 +38,8 @@ const Projects = () => {
                 Euismod faucibus turpis eu gravida mi. Pellentesque et velit
                 aliquam{" "}
               </p>
-              <Link to="/project_1" className="projects__item">
-                View project <img src={arrow} alt="Arrow" />
+              <Link to="/project_1" className="projects__item-link">
+                View project <img src={arrow} alt="Arrow" className="projects__icon" />
               </Link>
             </div>
           </Link>
@@ -47,8 +47,8 @@ const Projects = () => {
             <img src={img2} alt="Project preview" draggable="false" />
             <div className="projects__item-info">
               <p className="projects__item-info-title">Unisaas Website Design</p>
-              <Link to="/project_2" className="projects__item">
-                View project <img src={arrow} alt="Arrow" />
+              <Link to="/project_2" className="projects__item-link">
+                View project <img src={arrow} alt="Arrow" className="projects__icon" />
               </Link>
             </div>
           </Link>
@@ -56,8 +56,8 @@ const Projects = () => {
             <img src={img3} alt="Project preview" draggable="false" />
             <div className="projects__item-info">
               <p className="projects__item-info-title">Project title</p>
-              <Link to="/project_3" className="project__item">
-                View project <img src={arrow} alt="Arrow" />
+              <Link to="/project_3" className="projects__item-link">
+                View project <img src={arrow} alt="Arrow" className="projects__icon" />
               </Link>
             </div>
           </Link>
