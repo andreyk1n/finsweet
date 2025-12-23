@@ -1,0 +1,33 @@
+.clients__slider {
+  position: relative;
+  min-height: 220px;
+}
+
+.clients__slide {
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.clients__slide-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+
+  span {
+    display: block;
+    font-weight: 600;
+  }
+}
+
+.clients__buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}

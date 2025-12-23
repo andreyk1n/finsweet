@@ -4,6 +4,7 @@ import Hero from "./template-parts/components/hero/Hero.jsx";
 import How from "./template-parts/components/how/How.jsx";
 import Projects from "./template-parts/components/projects/Projects.jsx";
 import Cards from "./template-parts/components/cards/Cards.jsx";
+import Clients from "./template-parts/components/clients/Clients.jsx";
 import Footer from "./template-parts/partials/footer/Footer.jsx";
 
 
@@ -56,6 +57,7 @@ function App() {
         ]}
       />
 
+      <Clients />
 
       <Footer />
     </Router>
