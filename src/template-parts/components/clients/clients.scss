@@ -1,33 +1,129 @@
-.clients__slider {
-  position: relative;
-  min-height: 220px;
-}
+.clients {
+  width: 100%;
+  background-color: #F4F6FC;
+  padding: 130px 0;
 
-.clients__slide {
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-
-  &.is-visible {
-    opacity: 1;
-    transform: translateY(0);
+  @media (max-width: 992px) {
+    padding: 60px 0;
   }
-}
 
-.clients__slide-info {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-top: 20px;
+  &__container {
+    display: grid;
+    grid-template-columns: 327px 1fr;
+    gap: 0 110px;
 
-  span {
-    display: block;
-    font-weight: 600;
+    @media (max-width: 1200px) {
+      gap: 0 50px;
+    }
+
+    @media (max-width: 992px) {
+      gap: 30px;
+      grid-template-columns: 1fr;
+    }
   }
-}
 
-.clients__buttons {
-  display: flex;
-  gap: 12px;
-  margin-top: 24px;
+  h2 {
+    margin: 0 0 16px 0;
+
+    @media (max-width: 992px) {
+      text-align: center;
+    }
+  }
+
+  &__slider {
+    position: relative;
+    min-height: 220px;
+  }
+
+  &__slide {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+
+    &.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    &-avatar {
+      border-radius: 50%;
+      width: 52px;
+      height: 52px;
+      min-width: 52px;
+    }
+
+    p {
+      color: #282938;
+      font-size: clamp(20px, 5vw, 32px);
+      font-weight: 500;
+    }
+  }
+
+  &__slide-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+
+    div {
+      color: #282938;
+      font-size: 12px;
+      font-weight: 500;
+
+      span {
+        display: block;
+        font-weight: 600;
+        color: #282938;
+        font-size: 18px;
+      }
+
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    grid-column: span 2;
+    margin: -48px 0 0 0;
+    z-index: 2;
+
+    @media (max-width: 992px) {
+      grid-column: span 1;
+      margin: 15px 0 0 0;
+    }
+  }
+
+  &__button {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    border-radius: 50%;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .5s;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .5;
+    }
+
+    &--prev {
+      svg {
+        fill: #282938;
+      }
+    }
+
+    &--next {
+      background-color: #5239FA;
+
+      svg {
+        fill: white;
+      }
+    }
+  }
 }

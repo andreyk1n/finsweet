@@ -1,7 +1,7 @@
 import { useState } from "react";
-import img1 from "../../../images/cards/1.svg";
-import img2 from "../../../images/cards/2.svg";
-import img3 from "../../../images/cards/3.svg";
+import img1 from "../../../images/clients/client1.jpg";
+import img2 from "../../../images/clients/client1.jpg";
+import img3 from "../../../images/clients/client1.jpg";
 import "./clients.scss";
 
 const slides = [
@@ -49,7 +49,7 @@ const Clients = () => {
     <section className="clients">
       <div className="clients__container">
         <div className="clients__text">
-          <h2>What our clients say about us</h2>
+          <h2 className="mini">What our clients say about us</h2>
           <p className="clients__description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
           </p>
@@ -64,6 +64,7 @@ const Clients = () => {
                 src={current.img}
                 alt={current.name}
                 className="clients__slide-avatar"
+                draggable="false"
               />
               <div>
                 <span>{current.name}</span>
@@ -74,8 +75,35 @@ const Clients = () => {
         </div>
 
         <div className="clients__buttons">
-          <button onClick={() => changeSlide("prev")}>prev</button>
-          <button onClick={() => changeSlide("next")}>next</button>
+          <button className="clients__button clients__button--prev" onClick={() => changeSlide("prev")}>
+            <svg
+              width="13"
+              height="22"
+              viewBox="0 0 13 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="0.6"
+                d="M11.5859 -1.23626e-07L13 3.21951L3.96947 10.9106L13 18.7805L11.5859 22L9.06922e-07 11.626L1.06329e-06 9.8374L11.5859 -1.23626e-07Z"
+                fill=""
+              />
+            </svg>
+          </button>
+          <button className="clients__button clients__button--next" onClick={() => changeSlide("next")}>
+            <svg
+              width="13"
+              height="22"
+              viewBox="0 0 13 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1.41412 22L0 18.7805L9.03053 11.0894L0 3.21951L1.41412 0L13 10.374V12.1626L1.41412 22Z"
+                fill=""
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </section>
