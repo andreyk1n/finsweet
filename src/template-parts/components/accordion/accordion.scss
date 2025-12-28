@@ -1,0 +1,30 @@
+.accordion {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion__header {
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.accordion__arrow {
+  transition: transform 0.3s ease;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.accordion__item--active .accordion__arrow {
+  transform: rotate(180deg);
+}
+
+.accordion__content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}

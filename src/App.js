@@ -5,10 +5,24 @@ import How from "./template-parts/components/how/How.jsx";
 import Projects from "./template-parts/components/projects/Projects.jsx";
 import Cards from "./template-parts/components/cards/Cards.jsx";
 import Clients from "./template-parts/components/clients/Clients.jsx";
+import Accordion from "./template-parts/components/accordion/Accordion.jsx";
 import Footer from "./template-parts/partials/footer/Footer.jsx";
 
 
 function App() {
+  const accordionData = [
+    {
+      title: "Accordion 1",
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+    },
+    {
+      title: "Accordion 2",
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+    },
+    {
+      title: "Accordion 3",
+      content: "Lorem ipsum dolor sit amet consectetur adipisicing elit..."
+    }]
   return (
     <Router>
       <Header />
@@ -58,6 +72,13 @@ function App() {
       />
 
       <Clients />
+
+      <Accordion
+        title="Frequently asked questions"
+        description="Contact us for more info"
+        items={accordionData}
+        defaultActiveIndex={0}
+      />
 
       <Footer />
     </Router>
