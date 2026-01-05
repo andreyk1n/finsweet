@@ -1,30 +1,112 @@
 .accordion {
-  max-width: 600px;
-  margin: 0 auto;
-}
+  margin: 128px auto;
 
-.accordion__header {
-  background-color: transparent;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.5s ease;
-}
+  @media (max-width: 992px) {
+    margin: 60px 0;
+  }
 
-.accordion__arrow {
-  transition: transform 0.3s ease;
-  font-size: 30px;
-  font-weight: bold;
-}
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
 
-.accordion__item--active .accordion__arrow {
-  transform: rotate(180deg);
-}
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
 
-.accordion__content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease;
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    max-width: 328px;
+
+    @media (max-width: 992px) {
+      max-width: 100%;
+    }
+  }
+
+  h2 {
+    font-size: clamp(28px, 4vw, 38px);
+  }
+
+  &__description {
+    color: #2405f2;
+    font-size: 18px;
+    font-weight: 500;
+    display: block;
+    margin: 16px 0 0 0;
+  }
+
+  &__counter {
+    color: #2405f2;
+    font-size: clamp(18px, 2vw, 24px);
+  }
+
+  &__header {
+    background-color: transparent;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    gap: 50px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+    color: #282938;
+    font-size: clamp(18px, 2vw, 24px);
+
+    @media (max-width: 992px) {
+      gap: 20px;
+    }
+  }
+
+  &__arrow {
+    transition: transform 0.3s ease;
+    font-size: 30px;
+    color: #282938;
+    opacity: .69;
+    margin: 0 0 0 auto;
+  }
+
+  &__item--active &__arrow {
+    transform: rotate(180deg);
+  }
+
+  &__content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+
+    p {
+      color: #282938;
+      font-size: clamp(16px, 2vw, 18px);
+      padding: 16px 25px 25px 80px;
+
+      @media (max-width: 992px) {
+        padding: 16px 16px 16px 0;
+      }
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+
+    @media (max-width: 992px) {
+      gap: 16px;
+    }
+  }
+
+  &__item {
+    padding: 0 0 32px 0;
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #ECECF1;
+    }
+  }
 }
