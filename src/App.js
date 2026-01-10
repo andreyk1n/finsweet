@@ -6,6 +6,7 @@ import Projects from "./template-parts/components/projects/Projects.jsx";
 import Cards from "./template-parts/components/cards/Cards.jsx";
 import Clients from "./template-parts/components/clients/Clients.jsx";
 import Accordion from "./template-parts/components/accordion/Accordion.jsx";
+import Cta from "./template-parts/components/cta/Cta.jsx";
 import Footer from "./template-parts/partials/footer/Footer.jsx";
 
 
@@ -88,6 +89,8 @@ function App() {
         items={accordionData}
         defaultActiveIndex={0}
       />
+
+      <Cta />
 
       <Footer />
     </Router>
