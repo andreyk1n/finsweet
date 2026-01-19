@@ -1,4 +1,5 @@
 import Hero from "../components/hero/Hero.jsx";
+import Who from "../components/who/Who.jsx";
 import heroImage from "../../images/hero/hero--about.jpg";
 
 
@@ -15,6 +16,8 @@ const About = () => {
           alt: "Hero illustration",
         }}
       />
+
+      <Who />
     </>
   );
 };
