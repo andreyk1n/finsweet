@@ -2,8 +2,8 @@ import Hero from "../components/hero/Hero.jsx";
 import Who from "../components/who/Who.jsx";
 import Process from "../components/process/Process.jsx";
 import Content from "../components/content/Content.jsx";
+import Cards from "../components/cards/Cards.jsx";
 import heroImage from "../../images/hero/hero--about.jpg";
-
 
 const About = () => {
   return (
@@ -24,6 +24,29 @@ const About = () => {
       <Process />
 
       <Content />
+
+      <Cards
+        className="cards--blue"
+        label=""
+        title="The benefits of working with us"
+        items={[
+          {
+            icon: 6,
+            title: "Customize with ease",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+          },
+          {
+            icon: 3,
+            title: "Perfectly Responsive",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+          },
+          {
+            icon: 1,
+            title: "Friendly Support",
+            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+          },
+        ]}
+      />
     </>
   );
 };

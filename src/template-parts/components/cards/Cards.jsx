@@ -22,7 +22,7 @@ const Cards = ({
 }) => {
   if (!items.length) return null;
   return (
-    <section className={`cards${className}`}>
+    <section className={`cards ${className}`}>
       <div className="cards__container">
         {label && <span className="cards__label">{label}</span>}
         {title && <h2 className="cards__title">{title}</h2>}
