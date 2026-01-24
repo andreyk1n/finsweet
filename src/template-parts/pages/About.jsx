@@ -3,6 +3,7 @@ import Who from "../components/who/Who.jsx";
 import Process from "../components/process/Process.jsx";
 import Content from "../components/content/Content.jsx";
 import Cards from "../components/cards/Cards.jsx";
+import Team from "../components/team/Team.jsx";
 import heroImage from "../../images/hero/hero--about.jpg";
 
 const About = () => {
@@ -47,6 +48,8 @@ const About = () => {
           },
         ]}
       />
+
+      <Team />
     </>
   );
 };
