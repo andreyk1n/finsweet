@@ -25,7 +25,7 @@ const Who = () => {
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
                 nisi ut aliquip ex ea commodo consequat.
               </p>
-            </div>
+            </div> 
           </div>
         </div>
         <img src={img} alt="Who we are" draggable="false" className="who__image" />

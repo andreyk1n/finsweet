@@ -1,5 +1,6 @@
 import Hero from "../components/hero/Hero.jsx";
 import Who from "../components/who/Who.jsx";
+import Process from "../components/process/Process.jsx";
 import heroImage from "../../images/hero/hero--about.jpg";
 
 
@@ -18,6 +19,8 @@ const About = () => {
       />
 
       <Who />
+
+      <Process />
     </>
   );
 };
