@@ -1,0 +1,26 @@
+.price {
+    width: 100%;
+    padding: 200px 0;
+
+
+    @media (max-width: 992px) {
+        padding: 120px 0 60px 0;
+    }
+
+    &__title {
+        text-align: center;
+        color: #282938;
+    }
+
+    &__description {
+        text-align: center;
+        max-width: 562px;
+        margin: 0 auto;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
