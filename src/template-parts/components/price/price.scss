@@ -2,7 +2,6 @@
     width: 100%;
     padding: 200px 0;
 
-
     @media (max-width: 992px) {
         padding: 120px 0 60px 0;
     }
@@ -21,6 +20,127 @@
     &__cards {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+        margin: 64px 0 0 0;
+        gap: 30px;
+
+        @media (max-width: 1050px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &__card {
+        padding: 64px 48px;
+        background-color: #F4F6FC;
+        border-radius: 12px;
+
+        @media (max-width: 992px) {
+            padding: 32px 24px;
+        }
+
+        &-header {
+            display: flex;
+            flex-direction: column;
+
+            div {
+                display: flex;
+                align-items: center;
+            }
+        }
+
+        &-price {
+            color: #282938;
+            font-size: clamp(24px, 5vw, 38px);
+            font-weight: 600;
+            margin: 0 8px 0 0;
+        }
+
+        &-period {
+            color: #2405f2;
+            font-size: 16px;
+        }
+
+        &-title {
+            color: #282938;
+            font-size: clamp(18px, 2vw, 24px);
+            font-weight: 600;
+            display: block;
+            margin: 20px 0 8px 0;
+        }
+
+        &-subtitle {
+            color: #28293864;
+            font-size: 16px;
+        }
+
+        &-features {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin: 80px 0 0 0;
+
+            @media (max-width: 992px) {
+                margin: 40px 0 0 0;
+            }
+        }
+
+        &-feature {
+            position: relative;
+            padding-left: 22px;
+            font-size: 16px;
+            color: #64748b;
+            line-height: 1.6;
+            transition: color 0.3s ease;
+
+            &::after {
+                content: '';
+                position: absolute;
+                left: -6px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 26px;
+                height: 18px;
+                display: block;
+                min-width: 26px;
+                background-image: url('data:image/svg+xml,<svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.7764 9.2334C14.5938 9.84814 14.5701 11.0826 13.7295 11.665L3.85351 18.5029C2.8587 19.1915 1.5 18.4795 1.5 17.2695L1.5 3.00586C1.5 1.76901 2.91277 1.0635 3.90137 1.80664L13.7764 9.2334Z" fill="%2397DAAD" stroke="url(%23paint0_linear_174_502)" stroke-width="3"/><defs><linearGradient id="paint0_linear_174_502" x1="-4.84615" y1="-17.0039" x2="11.6069" y2="11.3186" gradientUnits="userSpaceOnUse"><stop stop-color="white"/><stop offset="1" stop-color="white" stop-opacity="0"/></linearGradient></defs></svg>');
+                background-size: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+
+        &--featured {
+            background-color: #1C1E53;
+            color: #fff;
+
+            .price__card-price, .price__card-title {
+                color: #fff;
+            }
+
+            .price__card-subtitle {
+                color: #ffffff62;
+            }
+
+            .price__card-feature {
+                color: #ffffff62;
+            }
+
+            .price__card-period {
+                color: #FCD980;
+            }
+
+        }
+
+        &-button {
+            width: 100%;
+            margin: 80px 0 0 0;
+
+            @media (max-width: 992px) {
+                margin: 40px 0 0 0;
+            }
+        }
     }
 
 }

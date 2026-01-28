@@ -10,11 +10,13 @@ const Price = () => {
           to help you bring your designs to life — without coding them.
         </p>
 
-        <div className="price__items">
+        <div className="price__cards">
           <div className="price__card price__card--light">
             <div className="price__card-header">
-              <span className="price__card-price">$299</span>
-              <span className="price__card-period">Per Design</span>
+              <div>
+                <span className="price__card-price">$299</span>
+                <span className="price__card-period">Per Design</span>
+              </div>
               <h3 className="price__card-title">Landing Page</h3>
               <p className="price__card-subtitle">
                 When you’re ready to go beyond prototyping in Figma,
@@ -36,14 +38,16 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button">Get started</button>
+              <button className="price__card-button button button--black">Get started</button>
             </div>
           </div>
 
           <div className="price__card price__card--featured">
             <div className="price__card-header">
-              <span className="price__card-price">$399</span>
-              <span className="price__card-period">Multi Design</span>
+              <div>
+                <span className="price__card-price">$399</span>
+                <span className="price__card-period">Multi Design</span>
+              </div>
               <h3 className="price__card-title">Website Page</h3>
               <p className="price__card-subtitle">
                 When you’re ready to go beyond prototyping in Figma, Webflow's
@@ -70,7 +74,7 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button price__card-button--accent">
+              <button className="price__card-button button button--yellow">
                 Get started
               </button>
             </div>
@@ -78,8 +82,10 @@ const Price = () => {
 
           <div className="price__card price__card--light">
             <div className="price__card-header">
-              <span className="price__card-price">$499+</span>
-              <span className="price__card-period">Per Design</span>
+              <div>
+                <span className="price__card-price">$499+</span>
+                <span className="price__card-period">Per Design</span>
+              </div>
               <h3 className="price__card-title">Complex Project</h3>
               <p className="price__card-subtitle">
                 When you’re ready to go beyond prototyping in Figma,
@@ -108,7 +114,7 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button">Contact us</button>
+              <button className="price__card-button button button--black">Contact us</button>
             </div>
           </div>
         </div>
