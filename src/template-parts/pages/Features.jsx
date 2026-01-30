@@ -1,3 +1,4 @@
+import useDocumentMeta from "../components/useDocumentMeta/useDocumentMeta.js";
 import Hero from "../components/hero/Hero.jsx";
 import Cards from "../components/cards/Cards.jsx";
 import Content from "../components/content/Content.jsx";
@@ -9,7 +10,10 @@ import img5 from "../../images/content/5.jpg";
 import img6 from "../../images/content/6.jpg";
 
 const Features = () => {
-
+  useDocumentMeta({
+    title: "Finsweet | Our Features",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  });
   const accordionData = [
     {
       title: "How much time does it take?",

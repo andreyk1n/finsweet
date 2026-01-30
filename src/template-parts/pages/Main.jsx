@@ -1,3 +1,4 @@
+import useDocumentMeta from "../components/useDocumentMeta/useDocumentMeta.js";
 import Hero from "../components/hero/Hero.jsx";
 import How from "../components/how/How.jsx";
 import Projects from "../components/projects/Projects.jsx";
@@ -8,6 +9,10 @@ import Cta from "../components/cta/Cta.jsx";
 import heroImage from "../../images/hero/image.svg";
 
 function Main() {
+    useDocumentMeta({
+    title: "Finsweet",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  });
   const accordionData = [
     {
       title: "How much time does it take?",

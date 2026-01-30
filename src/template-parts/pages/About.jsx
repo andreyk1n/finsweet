@@ -1,3 +1,4 @@
+import useDocumentMeta from "../components/useDocumentMeta/useDocumentMeta.js";
 import Hero from "../components/hero/Hero.jsx";
 import Who from "../components/who/Who.jsx";
 import Process from "../components/process/Process.jsx";
@@ -9,6 +10,10 @@ import img1 from "../../images/content/1.jpg";
 import img2 from "../../images/content/2.jpg";
 
 const About = () => {
+  useDocumentMeta({
+    title: "Finsweet | About us",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  });
   const contentRows = [
     {
       id: 1,

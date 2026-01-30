@@ -1,7 +1,13 @@
+import useDocumentMeta from "../components/useDocumentMeta/useDocumentMeta.js";
 import Price from "../components/price/Price.jsx";
 import Accordion from "../components/accordion/Accordion.jsx";
 
 const Pricing = () => {
+  useDocumentMeta({
+    title: "Finsweet | Pricing page",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  });
   const accordionData = [
     {
       title: "How much time does it take?",
