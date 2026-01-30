@@ -5,8 +5,32 @@ import Content from "../components/content/Content.jsx";
 import Cards from "../components/cards/Cards.jsx";
 import Team from "../components/team/Team.jsx";
 import heroImage from "../../images/hero/hero--about.jpg";
+import img1 from "../../images/content/1.jpg";
+import img2 from "../../images/content/2.jpg";
 
 const About = () => {
+  const contentRows = [
+    {
+      id: 1,
+      label: "Our Mission",
+      title: "Inspire, Innovate, Share",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      image: {
+        src: img1,
+      },
+    },
+    {
+      id: 2,
+      rowClass: "",
+      reverse: true,
+      label: "Our Vision",
+      title: "Laser focus",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      image: {
+        src: img2,
+      },
+    },
+  ];
   return (
     <>
       <Hero
@@ -19,13 +43,9 @@ const About = () => {
           alt: "Hero illustration",
         }}
       />
-
       <Who />
-
       <Process />
-
-      <Content />
-
+      <Content className="content--blue" rows={contentRows} />
       <Cards
         className="cards--blue"
         label=""
@@ -48,7 +68,6 @@ const About = () => {
           },
         ]}
       />
-
       <Team />
     </>
   );
