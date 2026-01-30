@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { NavLink, Link } from "react-router-dom";
-import logo from '../../../images/header/logo.svg'; 
-import './header.scss';
+import logo from "../../../images/header/logo.svg";
+import "./header.scss";
 
 function useWindowWidth() {
   const [width, setWidth] = useState(window.innerWidth);
@@ -65,11 +65,7 @@ function Header() {
           className={`header__nav ${menuActive ? "active" : ""}`}
           ref={navRef}
         >
-          <NavLink
-            className="header__link"
-            to="/"
-            onClick={handleLinkClick}
-          >
+          <NavLink className="header__link" to="/" onClick={handleLinkClick}>
             Home
           </NavLink>
           <NavLink
@@ -95,13 +91,6 @@ function Header() {
           </NavLink>
           <NavLink
             className="header__link"
-            to="/faq"
-            onClick={handleLinkClick}
-          >
-            Faq
-          </NavLink>
-          <NavLink
-            className="header__link"
             to="/blog"
             onClick={handleLinkClick}
           >
@@ -110,16 +99,22 @@ function Header() {
 
           {isMobile && (
             <div className="header__buttons">
-              <button className="button">
+              <NavLink
+                to="/contacts"
+                className="button"
+                onClick={handleLinkClick}
+              >
                 Contact us
-              </button>
+              </NavLink>
             </div>
           )}
         </nav>
 
         {!isMobile && (
           <div className="header__buttons">
-            <button className="button">Contact us</button>
+            <NavLink to="/contacts" className="button">
+              Contact us
+            </NavLink>
           </div>
         )}
       </div>

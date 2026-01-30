@@ -61,7 +61,6 @@ const Footer = () => {
             <NavLink to="/about">About us</NavLink>
             <NavLink to="/features">Features</NavLink>
             <NavLink to="/pricing">Pricing</NavLink>
-            <NavLink to="/faq">FAQ</NavLink>
             <NavLink to="/blog">Blog</NavLink>
           </nav>
         </div>
