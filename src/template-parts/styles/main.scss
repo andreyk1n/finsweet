@@ -70,6 +70,10 @@ h2.mini {
     font-size: clamp(28px, 3vw, 38px);
 }
 
+textarea {
+    resize: none;
+}
+
 [class*='__label'] {
     color: #282938;
     font-size: 16px;
