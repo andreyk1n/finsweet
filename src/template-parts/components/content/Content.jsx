@@ -1,25 +1,26 @@
 import "./content.scss";
 
-const Content = ({ rows = [], className = "" }) => {
+const Content = ({ rows = [], className = "", reverse = false }) => {
     return (
         <div className={`content ${className}`}>
             <div className="content__container">
                 {rows.map((row, index) => {
                     const {
                         rowClass = "",
-                        reverse = false,
                         image,
                         label,
                         title,
                         text,
                     } = row;
 
+                    const isReverse = reverse || row.reverse;
+
                     return (
                         <div
                             key={row.id ?? index}
                             className={`content__row ${rowClass}`}
                         >
-                            {!reverse && (
+                            {!isReverse && (
                                 <div className="content__col">
                                     <p className="content__label">{label}</p>
                                     <h2 className="content__title">{title}</h2>
@@ -34,7 +35,7 @@ const Content = ({ rows = [], className = "" }) => {
                                 className="content__image"
                             />
 
-                            {reverse && (
+                            {isReverse && (
                                 <div className="content__col">
                                     <p className="content__label">{label}</p>
                                     <h2 className="content__title">{title}</h2>
@@ -48,5 +49,6 @@ const Content = ({ rows = [], className = "" }) => {
         </div>
     );
 };
+
 
 export default Content;
