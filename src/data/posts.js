@@ -1,9 +1,9 @@
-// src/data/posts.js
 export const posts = [
     {
         id: 1,
+        author: 'Andrew Jonson posted',
         title: "How to Grow Your Freelance Business in 2026",
-        summary: "Learn strategies to scale your freelance work from side-hustle to full-time success.",
+        summary: "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.",
         content: `
 In 2026, freelancing has evolved into a powerful path to financial freedom and location independence. With companies leaning heavily on specialized independent talent rather than bloated agencies, the opportunity to scale from inconsistent side gigs to a predictable, high-earning business is greater than ever—if you approach it strategically.
 Freelancing continues to dominate the modern work landscape as one of the most flexible and rewarding ways to earn a living in the digital economy. Millions begin with a few evening or weekend projects, slowly building momentum until the income starts to rival or exceed traditional salaries. The freelancers who make the leap to full-time success don’t rely on luck or endless hustle alone; they build systems that compound over time.
