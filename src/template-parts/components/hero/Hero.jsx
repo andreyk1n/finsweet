@@ -1,4 +1,5 @@
 import "./hero.scss";
+import { Link } from "react-router-dom";
 
 const Hero = ({
   className = "",
@@ -21,23 +22,30 @@ const Hero = ({
 
             {title && <h1 className="hero__title">{title}</h1>}
 
-            {description && (
-              <p className="hero__description">{description}</p>
-            )}
+            {description && <p className="hero__description">{description}</p>}
 
             {buttons.length > 0 && (
               <div className="hero__buttons">
-                {buttons.map((btn, index) => (
-                  <button
-                    key={index}
-                    className={`button ${btn.className || ""}`}
-                    onClick={btn.onClick}
-                    type={btn.type || "button"}
-                  >
-                    {btn.label}
-                    {btn.icon && btn.icon}
-                  </button>
-                ))}
+                {buttons.map((btn, index) => {
+                  const classNames = `button ${btn.className || ""}`;
+
+                  return btn.to ? (
+                    <Link key={index} to={btn.to} className={classNames}>
+                      {btn.label}
+                      {btn.icon && btn.icon}
+                    </Link>
+                  ) : (
+                    <button
+                      key={index}
+                      className={classNames}
+                      onClick={btn.onClick}
+                      type={btn.type || "button"}
+                    >
+                      {btn.label}
+                      {btn.icon && btn.icon}
+                    </button>
+                  );
+                })}
               </div>
             )}
           </div>

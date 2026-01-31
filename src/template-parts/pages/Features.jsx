@@ -100,6 +100,7 @@ const Features = () => {
             label: "View pricing",
             className: "button--yellow",
             onClick: () => console.log("Work"),
+            to: "/pricing",
           },
         ]}
       />

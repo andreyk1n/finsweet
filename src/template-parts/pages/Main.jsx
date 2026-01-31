@@ -50,10 +50,12 @@ function Main() {
             label: "View our work",
             className: "button--yellow",
             onClick: () => console.log("Work"),
+            to: "/portfolio",
           },
           {
             label: "View Pricing",
             className: "button--arrow",
+            to: "/pricing",
             icon: (
               <svg width="25" height="12" viewBox="0 0 25 12">
                 <path d="M24.5303 6.05377C24.8232 5.76087..." fill="#F4F6FC" />
