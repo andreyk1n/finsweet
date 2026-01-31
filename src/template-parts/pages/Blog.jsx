@@ -1,6 +1,11 @@
+import { posts } from "../../data/posts";
+import BlogSection from "../components/blog/BlogSection";
+
 const Blog = () => {
     return ( 
-        <>Blog</>
+        <>
+        <BlogSection posts={posts} />
+        </>
      );
 }
  
