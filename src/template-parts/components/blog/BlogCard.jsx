@@ -11,6 +11,7 @@ const BlogCard = ({ post }) => {
           alt={post.title}
           className="blog-card__image"
           loading="lazy"
+          draggable="false"
         />
       </Link>
 

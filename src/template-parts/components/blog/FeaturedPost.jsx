@@ -18,6 +18,7 @@ const FeaturedPost = ({ post }) => {
           alt={post.title}
           className="featured__image"
           loading="lazy"
+          draggable="false"
         />
       </Link>
 

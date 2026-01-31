@@ -14,13 +14,14 @@ const Post = () => {
 
   return (
     <article className="post">
+      <h1 className="post__title">{post.title}</h1>
+
       <img
         src={`/images/blog${post.image}`}
         alt={post.title}
         className="post__image"
+        draggable="false"
       />
-
-      <h1 className="post__title">{post.title}</h1>
 
       <div className="post__meta">
         <span>{post.date}</span>
