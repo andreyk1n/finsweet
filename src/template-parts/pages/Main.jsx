@@ -50,7 +50,7 @@ function Main() {
             label: "View our work",
             className: "button--yellow",
             onClick: () => console.log("Work"),
-            to: "/portfolio",
+            to: "/works",
           },
           {
             label: "View Pricing",

@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="projects__container">
         <div className="projects__head">
           <h2>View our projects</h2>
-          <Link to="/projects" className="projects__link">
+          <Link to="/works" className="projects__link">
             View More
             <svg
               width="25"
