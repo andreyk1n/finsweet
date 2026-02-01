@@ -1,3 +1,11 @@
+import blog1 from "../images/blog/blog-1.jpg";
+import blog2 from "../images/blog/blog-2.jpg";
+import blog3 from "../images/blog/blog-3.jpg";
+import blog4 from "../images/blog/blog-4.jpg";
+import blog5 from "../images/blog/blog-5.jpg";
+import blog6 from "../images/blog/blog-6.jpg";
+import blog7 from "../images/blog/blog-7.jpg";
+
 export const posts = [
     {
         id: 1,
@@ -16,7 +24,7 @@ Finally, continuous learning remains non-negotiable. The half-life of skills in 
 By combining deep specialization, magnetic personal branding, smart client pipelines, AI leverage, disciplined time systems, and relentless upskilling, you can transform those early inconsistent gigs into a sustainable, profitable, and genuinely enjoyable career. The tools, platforms, and buyer demand are all here in 2026—the only question is whether you build the system to capture it.
     `,
         date: "30 Jan 2026",
-        image: "/blog-1.jpg"
+        image: blog1,
     },
     {
         id: 2,
@@ -34,7 +42,7 @@ Social connection fights the loneliness that quietly erodes motivation. Schedule
 In 2026, mastering remote work means building a life-first system where productivity supports freedom instead of stealing it. With a deliberate workspace, protected routine, ruthless prioritization, async-first communication, strategic breaks, movement, and real human connection, you can deliver exceptional results while actually enjoying the location independence and flexibility that drew you to remote work in the first place. The tools and habits exist—the discipline to use them consistently is what separates the thriving from the merely surviving.
     `,
         date: "28 Jan 2026",
-        image: "/blog-2.jpg"
+        image: blog2,
     },
     {
         id: 3,
@@ -52,7 +60,7 @@ Collaboration across disciplines has never been more critical. UX designers work
 Investing in ongoing research, rapid prototyping, and inclusive testing is what separates leading UX in 2026 from the rest. By embracing AI as a collaborative tool, prioritizing explainability and ethics, advancing multimodal and immersive capabilities, and relentlessly focusing on accessibility and human connection, designers craft experiences that are not only efficient and enjoyable but truly meaningful. In an AI-saturated world, the most powerful differentiator is still thoughtful, empathetic design that puts people first.
     `,
         date: "25 Jan 2026",
-        image: "/blog-3.jpg"
+        image: blog3,
     },
     {
         id: 4,
@@ -70,7 +78,7 @@ Partnerships and local community engagement deliver outsized results with minima
 By thoughtfully blending digital precision (targeted social, SEO, email, content) with offline warmth (partnerships, community involvement, referrals), small businesses in 2026 can achieve steady, profitable growth without massive budgets. The secret isn’t spending more—it’s spending smarter, staying authentic, listening relentlessly to customers, and building systems that compound over months and years. Start small, measure what works, double down on winners, and watch a local operation quietly become a regional (or even global) success story.
     `,
         date: "22 Jan 2026",
-        image: "/blog-4.jpg"
+        image: blog4,
     },
     {
         id: 5,
@@ -88,7 +96,7 @@ Finally, a shared mindset that frames challenges as growth opportunities transfo
 In 2026, building resilient teams means investing in the human elements that technology can’t replace: trust, safety, empathy, clear communication, continuous learning, and a growth-oriented outlook. Leaders who prioritize these foundations don’t just help their teams survive change—they help them thrive in it, delivering better results, higher engagement, and genuine long-term success in an era where adaptability is the ultimate competitive edge.
     `,
         date: "20 Jan 2026",
-        image: "/blog-5.jpg"
+        image: blog5,
     },
     {
         id: 6,
@@ -106,7 +114,7 @@ Challenges remain and demand thoughtful solutions. The digital divide—unequal 
 Looking ahead, the most effective education in 2026 and beyond blends the best of technology with irreplaceable human elements—empathy, inspiration, ethical guidance, and real-world relationship-building. Hybrid models dominate: physical classrooms augmented by digital tools for personalization and collaboration, online options for flexibility, and immersive experiences for depth. When implemented thoughtfully, technology doesn't replace teachers or peers; it amplifies their impact, making learning more equitable, engaging, and aligned with how humans actually learn. The result is an education system that prepares students not just for jobs that exist today, but for a future defined by rapid change and lifelong curiosity.
     `,
         date: "18 Jan 2026",
-        image: "/blog-6.jpg"
+        image: blog6,
     },
     {
         id: 7,
@@ -124,6 +132,6 @@ Embedding sustainability into core operations requires leadership commitment, cl
 In 2026, the most successful businesses understand that sustainability and profitability are intertwined. By reducing environmental footprint through smarter operations, ethical sourcing, circular design, and community investment, companies don't just help the planet—they build stronger brands, loyal customers, motivated teams, resilient supply chains, and attractive financial profiles. The transition isn't always easy, but the data is clear: companies that lead on sustainability today are the ones best positioned to thrive in the resource-constrained, regulation-heavy, value-driven economy of tomorrow.
     `,
         date: "15 Jan 2026",
-        image: "/blog-7.jpg"
+        image: blog7,
     },
 ];

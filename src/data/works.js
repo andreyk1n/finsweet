@@ -1,10 +1,15 @@
+import project1 from "../images/projects/project-1.jpg";
+import project2 from "../images/projects/project-2.jpg";
+import project3 from "../images/projects/project-3.jpg";
+import project4 from "../images/projects/project-4.jpg";
+
 export const works = [
   {
     id: 1,
     title: "Unisass Website Design",
     description:
       "A bold and modern SaaS website concept designed to showcase product features, analytics, and scalability.",
-    image: "/images/projects/project-2.jpg",
+    image: project2,
     content: [
       "Unisass is a SaaS platform designed to help companies manage analytics and performance metrics in one place. The objective of this project was to present a complex product in a simple and visually appealing way.",
       "We focused on clear information hierarchy and strong visual contrasts to guide users through the product’s features. Large headlines, clean UI components, and real-world use cases help explain how the platform delivers value.",
@@ -18,7 +23,7 @@ export const works = [
     title: "Church Website Design",
     description:
       "A warm and welcoming website designed for a modern church community with a focus on storytelling and connection.",
-    image: "/images/projects/project-3.jpg",
+    image: project3,
     content: [
       "This church website project was focused on creating an emotional connection with visitors while keeping the experience simple and accessible for all age groups.",
       "The design uses large imagery, warm colors, and meaningful typography to communicate values such as faith, community, and openness. The homepage tells a story — from welcoming new visitors to encouraging participation in events and services.",
@@ -31,7 +36,7 @@ export const works = [
     title: "Startup Landing Page Design",
     description:
       "A conversion-focused landing page designed for an early-stage startup launching a new digital product.",
-    image: "/images/projects/project-4.jpg",
+    image: project4,
     content: [
       "This startup landing page was created to support a product launch and drive early user sign-ups. The main challenge was to clearly communicate the product’s value within seconds.",
       "We designed a strong hero section with a clear headline, supporting text, and a focused call-to-action. The page then walks users through the problem, the solution, and the key benefits of the product.",
@@ -44,7 +49,7 @@ export const works = [
     title: "Workhub Office Webflow Design",
     description:
       "A modern office website designed in Webflow for a flexible workspace brand, focused on clarity, usability, and conversion.",
-    image: "/images/projects/project-1.jpg",
+    image: project1,
     content: [
       "Workhub is a flexible office space brand focused on modern teams and fast-growing startups. The main goal of this project was to create a clean, professional website that communicates trust, flexibility, and human-centered design.",
       "We started with a deep discovery phase to understand the target audience — founders, HR managers, and remote teams. Based on these insights, we designed a layout that emphasizes clarity, openness, and ease of navigation.",

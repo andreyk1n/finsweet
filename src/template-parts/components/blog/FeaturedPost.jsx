@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 
 const FeaturedPost = ({ post }) => {
-  const imageSrc = `/images/blog${post.image}`;
-
   return (
     <article className="featured">
       <h1 className="featured__title">
@@ -14,7 +12,7 @@ const FeaturedPost = ({ post }) => {
 
       <Link to={`/post/${post.id}`} className="featured__image-link">
         <img
-          src={imageSrc}
+          src={post.image}   
           alt={post.title}
           className="featured__image"
           loading="lazy"

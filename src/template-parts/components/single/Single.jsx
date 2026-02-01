@@ -17,7 +17,7 @@ const Post = () => {
       <h1 className="post__title">{post.title}</h1>
 
       <img
-        src={`/images/blog${post.image}`}
+        src={post.image} 
         alt={post.title}
         className="post__image"
         draggable="false"
