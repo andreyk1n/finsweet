@@ -16,7 +16,11 @@ const SingleWork = ({ work }) => {
           />
         </div>
 
-        <div className="single-work__content">{work.content}</div>
+        <div className="single-work__content">
+          {work.content.map((paragraph, index) => (
+            <p key={index}>{paragraph}</p>
+          ))}
+        </div>
       </div>
     </section>
   );
