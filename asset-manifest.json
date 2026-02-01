@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/finsweet/static/css/main.abacb749.css",
-    "main.js": "/finsweet/static/js/main.280dc7b3.js",
+    "main.css": "/finsweet/static/css/main.e0766e56.css",
+    "main.js": "/finsweet/static/js/main.0f833f24.js",
     "static/js/453.5fb72f2b.chunk.js": "/finsweet/static/js/453.5fb72f2b.chunk.js",
     "static/media/blog-1.jpg": "/finsweet/static/media/blog-1.7982334d8f024f3fedd1.jpg",
     "static/media/project-4.jpg": "/finsweet/static/media/project-4.adf111cca82b07d775b4.jpg",
@@ -45,12 +45,12 @@
     "index.html": "/finsweet/index.html",
     "static/media/facebook.svg": "/finsweet/static/media/facebook.b904359ca607ae361cb02a22428d81db.svg",
     "static/media/arrow.svg": "/finsweet/static/media/arrow.4a348a98ff0285bb4d228ff106bedf2d.svg",
-    "main.abacb749.css.map": "/finsweet/static/css/main.abacb749.css.map",
-    "main.280dc7b3.js.map": "/finsweet/static/js/main.280dc7b3.js.map",
+    "main.e0766e56.css.map": "/finsweet/static/css/main.e0766e56.css.map",
+    "main.0f833f24.js.map": "/finsweet/static/js/main.0f833f24.js.map",
     "453.5fb72f2b.chunk.js.map": "/finsweet/static/js/453.5fb72f2b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.abacb749.css",
-    "static/js/main.280dc7b3.js"
+    "static/css/main.e0766e56.css",
+    "static/js/main.0f833f24.js"
   ]
 }
