@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./price.scss";
 
 const Price = () => {
@@ -38,7 +39,9 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button button button--black">Get started</button>
+              <Link to="/contacts" className="price__card-button button button--black">
+                Get started
+              </Link>
             </div>
           </div>
 
@@ -74,9 +77,9 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button button button--yellow">
+              <Link to="/contacts" className="price__card-button button button--yellow">
                 Get started
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -114,7 +117,9 @@ const Price = () => {
             </ul>
 
             <div className="price__card-actions">
-              <button className="price__card-button button button--black">Contact us</button>
+              <Link to="/contacts" className="price__card-button button button--black">
+                Contact us
+              </Link>
             </div>
           </div>
         </div>

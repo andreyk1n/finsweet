@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import img1 from "../../../images/how/1.svg";
 import img2 from "../../../images/how/2.svg";
 import img3 from "../../../images/how/3.svg";
@@ -14,7 +15,8 @@ const How = () => {
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor.
           </p>
-          <button className="button button--arrow button--violet">
+
+          <Link to="/contacts" className="button button--arrow button--violet">
             Get in touch with us{" "}
             <svg
               width="25"
@@ -28,29 +30,38 @@ const How = () => {
                 fill="#2405F2"
               />
             </svg>
-          </button>
+          </Link>
         </div>
+
         <div className="how__items">
-            <div className="how__item">
-                <img className="how__item-icon" src={img1} alt="Counter item" draggable="false" />
-                <p className="how__item-title">Strategy</p>
-                <p className="how__item-text">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.</p>
-            </div>
-            <div className="how__item">
-                <img className="how__item-icon" src={img2} alt="Counter item" draggable="false" />
-                <p className="how__item-title">Wireframing</p>
-                <p className="how__item-text">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.</p>
-            </div>
-            <div className="how__item">
-                <img className="how__item-icon" src={img3} alt="Counter item" draggable="false" />
-                <p className="how__item-title">Design</p>
-                <p className="how__item-text">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.</p>
-            </div>
-            <div className="how__item">
-                <img className="how__item-icon" src={img4} alt="Counter item" draggable="false" />
-                <p className="how__item-title">Development</p>
-                <p className="how__item-text">Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.</p>
-            </div>
+          <div className="how__item">
+            <img className="how__item-icon" src={img1} alt="Counter item" draggable="false" />
+            <p className="how__item-title">Strategy</p>
+            <p className="how__item-text">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+            </p>
+          </div>
+          <div className="how__item">
+            <img className="how__item-icon" src={img2} alt="Counter item" draggable="false" />
+            <p className="how__item-title">Wireframing</p>
+            <p className="how__item-text">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+            </p>
+          </div>
+          <div className="how__item">
+            <img className="how__item-icon" src={img3} alt="Counter item" draggable="false" />
+            <p className="how__item-title">Design</p>
+            <p className="how__item-text">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+            </p>
+          </div>
+          <div className="how__item">
+            <img className="how__item-icon" src={img4} alt="Counter item" draggable="false" />
+            <p className="how__item-title">Development</p>
+            <p className="how__item-text">
+              Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam.
+            </p>
+          </div>
         </div>
       </div>
     </section>
