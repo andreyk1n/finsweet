@@ -1,18 +1,18 @@
-import { NavLink, Link } from "react-router-dom";
-import img1 from "../../../images/projects/project_1.jpg";
-import img2 from "../../../images/projects/project_2.jpg";
-import img3 from "../../../images/projects/project_3.jpg";
+import { Link } from "react-router-dom";
+import { works } from "../../../data/works";
 import arrow from "../../../images/projects/arrow.svg";
 import "./projects.scss";
 
 const Projects = () => {
+  const latestWorks = [...works].slice(-3).reverse();
+
   return (
     <section className="projects">
       <div className="projects__container">
         <div className="projects__head">
           <h2>View our projects</h2>
           <Link to="/projects" className="projects__link">
-            View More{" "}
+            View More
             <svg
               width="25"
               height="12"
@@ -27,40 +27,44 @@ const Projects = () => {
             </svg>
           </Link>
         </div>
+
         <div className="projects__items">
-          <Link to="/project_1" className="projects__item projects__item-big">
-            <img src={img1} alt="Project preview" draggable="false" />
-            <div className="projects__item-info">
-              <p className="projects__item-info-title">
-                Workhub office Webflow Webflow Design
-              </p>
-              <p className="projects__item-info-subtitle">
-                Euismod faucibus turpis eu gravida mi. Pellentesque et velit
-                aliquam{" "}
-              </p>
-              <Link to="/project_1" className="projects__item-link">
-                View project <img src={arrow} alt="Arrow" className="projects__icon" />
-              </Link>
-            </div>
-          </Link>
-          <Link to="/project_2" className="projects__item">
-            <img src={img2} alt="Project preview" draggable="false" />
-            <div className="projects__item-info">
-              <p className="projects__item-info-title">Unisaas Website Design</p>
-              <Link to="/project_2" className="projects__item-link">
-                View project <img src={arrow} alt="Arrow" className="projects__icon" />
-              </Link>
-            </div>
-          </Link>
-          <Link to="/project_3" className="projects__item">
-            <img src={img3} alt="Project preview" draggable="false" />
-            <div className="projects__item-info">
-              <p className="projects__item-info-title">Project title</p>
-              <Link to="/project_3" className="projects__item-link">
-                View project <img src={arrow} alt="Arrow" className="projects__icon" />
-              </Link>
-            </div>
-          </Link>
+          {latestWorks.map((work, index) => (
+            <Link
+              key={work.id}
+              to={`/work/${work.id}`}
+              className={`projects__item ${
+                index === 0 ? "projects__item-big" : ""
+              }`}
+            >
+              <img
+                src={work.image}
+                alt={work.title}
+                draggable="false"
+              />
+
+              <div className="projects__item-info">
+                <p className="projects__item-info-title">
+                  {work.title}
+                </p>
+
+                {index === 0 && (
+                  <p className="projects__item-info-subtitle">
+                    {work.description}
+                  </p>
+                )}
+
+                <span className="projects__item-link">
+                  View project
+                  <img
+                    src={arrow}
+                    alt="Arrow"
+                    className="projects__icon"
+                  />
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>
