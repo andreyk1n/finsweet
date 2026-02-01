@@ -12,6 +12,8 @@ import Pricing from "./template-parts/pages/Pricing.jsx";
 import Blog from "./template-parts/pages/Blog.jsx";
 import Contacts from "./template-parts/pages/Contacts.jsx";
 import Post from "./template-parts/pages/Post.jsx";
+import Works from "./template-parts/pages/Works.jsx";
+import Work from "./template-parts/pages/Work";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Route path="/pricing" element={<Pricing />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contacts" element={<Contacts />} />
+        <Route path="/works" element={<Works />} />
+        <Route path="/work/:id" element={<Work />} />
         <Route path="/post/:id" element={<Post />} />
       </Routes>
 
