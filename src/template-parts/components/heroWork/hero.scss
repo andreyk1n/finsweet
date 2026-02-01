@@ -1,0 +1,22 @@
+.hero {
+    width: 100%;
+    padding: 200px 0 100px 0;
+    background-color: #F4F6FC;
+
+    @media (max-width: 992px) {
+        padding: 120px 0 60px 0;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        max-width: 740px;
+        text-align: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    h1, p {
+        color: #282938;
+    }
+}
