@@ -108,8 +108,9 @@
 
   &__button {
     margin: 29px 0 0 0;
+
     &.button--yellow {
-         padding: 16px 0;
+      padding: 16px 0;
     }
   }
 
@@ -158,11 +159,43 @@
     }
 
     &__content {
-        padding: 44px 22px;
+      padding: 44px 22px;
     }
 
     &__form {
-        padding: 44px 22px;
+      padding: 44px 22px;
     }
+  }
+
+  &__popup {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+
+  &__popup-content {
+    background: #fff;
+    padding: 32px 40px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    animation: pop 0.3s ease;
+  }
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
   }
 }
